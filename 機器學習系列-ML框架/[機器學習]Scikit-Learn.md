@@ -1,4 +1,4 @@
-基本上Scikit-Learn的使用非常簡單，大多是需要了解原理直接調用不同函數，這篇做一些基本的介紹，大致熟悉一下，使用時直接查詢**[手冊目錄](https://scikit-learn.org/stable/user_guide.html)**的介紹與範例即可。
+基本上Scikit-Learn的使用非常簡單，比較像是工具包，大多是需要了解原理直接調用不同函數，這篇做一些基本的介紹，大致熟悉一下，使用時直接查詢**[手冊目錄](https://scikit-learn.org/stable/user_guide.html)**的介紹與範例即可。
 
  # Scikit-Learn #
 [**Scikit-Learn官網**](http://scikit-learn.org/stable/)
@@ -18,7 +18,12 @@ OLS(普通最小二乘)線性回歸中有2種求解法，一種是`直接法`，
 OLS算法使用的前提是必須滿足數據集無多重共線性，因為它是無偏估計，這也使它非常懼怕多重共線性問題，會使矩陣近似於奇異矩陣，使得它往往得到的權重參數Variance大而造成overfitting現象，是一個不穩定的回歸算法，可以使用regularization或Dimension Reduction等等方法來解決。
 
 ## z score normalization ##
-![](https://upload-images.jianshu.io/upload_images/13539817-9029fcd4ab3acd55.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     ![](https://upload-images.jianshu.io/upload_images/13539817-aefc4dbda3437578.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+[Preprocessing data](https://scikit-learn.org/stable/modules/preprocessing.html)
+[StandardScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn-preprocessing-standardscaler)
 
+![](https://upload-images.jianshu.io/upload_images/13539817-2823edae4396cef8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/13539817-6415270c760c2bff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-
+## Confusion matrix ##
+[confusion_matrix](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html#sklearn-metrics-confusion-matrix)
+[Confusion matrix](https://scikit-learn.org/stable/auto_examples/model_selection/plot_confusion_matrix.html#confusion-matrix)
